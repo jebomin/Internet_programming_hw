@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2020112084_제보민_2번_2023.06.01</title>
+    <meta charset="UTF-8" />
+    <style>
+      .multiplication-row {
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body onload="printMultiplicationTable()">
+    <div id="multiplicationTable"></div>
+
+    <script>
+      function printMultiplicationTable() {
+        var table = "";
+
+        for (var i = 1; i <= 9; i++) {
+          var row = document.createElement("div");
+          row.className = "multiplication-row";
+
+          for (var j = 1; j <= 9; j++) {
+            var result = i * j;
+            var equation = j + " * " + i + " = " + result;
+            var equationElement = document.createElement("p");
+            equationElement.textContent = equation;
+            row.appendChild(equationElement);
+          }
+
+          document.getElementById("multiplicationTable").appendChild(row);
+        }
+      }
+    </script>
+  </body>
+</html>

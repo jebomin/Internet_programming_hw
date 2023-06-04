@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2020112084_제보민_1번_2023.06.01</title>
+    <meta charset="UTF-8" />
+    <script>
+      function calculateRemainder() {
+        var input = document.getElementById("numbers").value;
+        var numbers = input.split(",");
+
+        var num1 = parseInt(numbers[0]);
+        var num2 = parseInt(numbers[1]);
+
+        var remainder = num1 > num2 ? num1 % num2 : num2 % num1;
+        var result =
+          remainder === 0 ? "나누어 떨어집니다." : "나누어 떨어지지 않습니다.";
+
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>두 수의 나머지 구하기</h1>
+
+    <label for="numbers">input:</label>
+    <input type="text" id="numbers" />
+    <br />
+
+    <button onclick="calculateRemainder()">확인</button>
+
+    <p id="result"></p>
+  </body>
+</html>

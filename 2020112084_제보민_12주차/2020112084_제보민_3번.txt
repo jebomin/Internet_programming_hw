@@ -1,0 +1,6 @@
+* 2진수로 선언
+let binary = 0b1111;
+* 8진수로 선언
+let octal = 017;
+* 16진수로 선언
+let hexadecimal = 0x15;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2020112084_제보민_3번_2023.06.01</title>
+    <meta charset="UTF-8" />
+    <style>
+      .multiplication-row {
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body onload="printMultiplicationTable()">
+    <div id="multiplicationTable"></div>
+
+    <script>
+      function printMultiplicationTable() {
+        var table = "";
+
+        for (var i = 0; i <= 8; i++) {
+          var row = document.createElement("div");
+          row.className = "multiplication-row";
+          if (i / 3 < 1) var t = 1;
+          else if (i / 3 < 2) var t = 2;
+          else if (i / 3 < 3) var t = 3;
+          for (var k = 0; k <= 2; k++) {
+            for (var j = 0; j <= 8; j += 3) {
+              if (i % 3 == 0) var tj = 1;
+              else if (i % 3 == 1) var tj = 2;
+              else if (i % 3 == 2) var tj = 3;
+              var x = t + k * 3;
+              var y = tj + j;
+              var result = x * y;
+              var equation = x + " * " + y + " = " + result;
+              var equationElement = document.createElement("p");
+              equationElement.textContent = equation;
+              row.appendChild(equationElement);
+            }
+          }
+
+          document.getElementById("multiplicationTable").appendChild(row);
+        }
+      }
+    </script>
+  </body>
+</html>

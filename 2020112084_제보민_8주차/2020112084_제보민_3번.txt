@@ -1,0 +1,1 @@
+background: skyblue url("시리얼넘버.jpg") center center / 100px 100px repeat-y;

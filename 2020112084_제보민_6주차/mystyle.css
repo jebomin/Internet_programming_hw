@@ -1,0 +1,5 @@
+body {background-color:skyblue; margin:30px;}
+#box1 {background-color: blue; color : red;}
+#box2 {background-color: red; color : blue;}
+#large_p1 {color : red;, font-size: 30px;}
+#large_p2 {color : blue;, font-size: 30px;}

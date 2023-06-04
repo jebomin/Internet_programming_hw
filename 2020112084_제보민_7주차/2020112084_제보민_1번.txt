@@ -1,0 +1,16 @@
+본 박스는 아래와 같은 코드로 구성되어 있고
+* html
+<div class="box">
+	DIVDIVDIV
+</div>
+
+*css
+div.box {
+	widht : 150px;
+	height : 50px;
+	margin : 40px;
+	border-width : 30px;
+	padding : 20px;
+}
+
+margin은 40px, border-with는 30px, padding은 20px, height는 50px, width는 150px이다.

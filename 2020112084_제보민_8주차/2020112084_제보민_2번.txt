@@ -1,0 +1,4 @@
+font-weight: bold;
+font-variant: small-caps;
+font-size: 20px;
+font-family: fantasy;

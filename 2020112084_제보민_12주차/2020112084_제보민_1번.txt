@@ -1,0 +1,8 @@
+variable-a: 변수명에는 하이픈(-)을 포함할 수 없음
+1student: 변수명은 숫자로 시작할 수 없음
+false: 예약어인 "false"는 변수명으로 사용 불가능
+function: 예약어인 "function"은 변수명으로 사용 불가능
+@variable: 변수명에 '@' 사용 불가능
+if: 예약어인 "if"는 변수명으로 사용 불가능
+null: 예약어인 "null"은 사용 불가능
+따라서, 사용할 수 없는 변수명은 "variable-a", "1student", "false", "function", "@variable", "if", "null"임
