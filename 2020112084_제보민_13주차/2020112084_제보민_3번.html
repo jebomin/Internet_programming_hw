@@ -16,19 +16,22 @@
 
     <script>
       function printMultiplicationTable() {
-        var table = "";
+        var table = document.getElementById("multiplicationTable");
 
         for (var i = 0; i <= 8; i++) {
           var row = document.createElement("div");
           row.className = "multiplication-row";
-          if (i / 3 < 1) var t = 1;
-          else if (i / 3 < 2) var t = 2;
-          else if (i / 3 < 3) var t = 3;
+
+          var t, tj;
+          if (i / 3 < 1) t = 1;
+          else if (i / 3 < 2) t = 2;
+          else if (i / 3 < 3) t = 3;
+
           for (var k = 0; k <= 2; k++) {
             for (var j = 0; j <= 8; j += 3) {
-              if (i % 3 == 0) var tj = 1;
-              else if (i % 3 == 1) var tj = 2;
-              else if (i % 3 == 2) var tj = 3;
+              if (i % 3 == 0) tj = 1;
+              else if (i % 3 == 1) tj = 2;
+              else if (i % 3 == 2) tj = 3;
               var x = t + k * 3;
               var y = tj + j;
               var result = x * y;
@@ -39,7 +42,7 @@
             }
           }
 
-          document.getElementById("multiplicationTable").appendChild(row);
+          table.appendChild(row);
         }
       }
     </script>
