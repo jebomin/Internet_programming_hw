@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>6-1번</title>
+    <style>
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #tran {
+        animation: spin 1s infinite linear;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><b>어지러워요</b></h1>
+    <hr />
+    <img
+      id="tran"
+      src="media/spongebob.png"
+      width="100"
+      height="100"
+      alt="animation"
+    />
+  </body>
+</html>
