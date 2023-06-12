@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>7-6</title>
+  </head>
+  <body>
+    <script>
+      var inputString = prompt("문자열 입력");
+      var parts = inputString.split("&");
+
+      document.write("<h1>문자열 분할</h1>");
+      document.write("<hr/>");
+      for (var i = 0; i < parts.length; i++) {
+        document.write("<p>" + parts[i] + "</p>");
+      }
+    </script>
+  </body>
+</html>
