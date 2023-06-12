@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>요일 확인</title>
+    <style>
+      p {
+        display: inline;
+        margin: 0;
+      }
+    </style>
+    <script>
+      function checkDay() {
+        var day = prompt("월화수목금토일 중에서 입력하세요");
+
+        var result;
+        switch (day) {
+          case "월":
+            result = "출근";
+            break;
+          case "화":
+            result = "출근";
+            break;
+          case "수":
+            result = "출근";
+            break;
+          case "목":
+            result = "출근";
+            break;
+          case "금":
+            result = "출근";
+            break;
+          case "토":
+            result = "휴일";
+            break;
+          case "일":
+            result = "휴일";
+            break;
+          default:
+            result = "잘못된 입력";
+            break;
+        }
+
+        document.getElementById("dayResult").innerText = day + "요일은 ";
+        document.getElementById("result").innerText = result;
+      }
+
+      window.onload = function () {
+        checkDay();
+      };
+    </script>
+  </head>
+  <body>
+    <h1>월화수목금토일</h1>
+    <hr />
+    <p id="dayResult"></p>
+    <p id="result"></p>
+  </body>
+</html>
