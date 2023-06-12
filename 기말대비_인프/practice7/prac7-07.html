@@ -2,32 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>16개의 랜덤 RGB 색</title>
+    <title>17개의 CSS2 색이름과 색</title>
     <style>
       div {
         display: inline-block;
-        width: 150px;
+        width: 60px;
         padding: 10px;
       }
     </style>
   </head>
   <body>
-    <h3>16개의 랜덤한 색 만들기</h3>
+    <h3>17개의 CSS2 색이름과 색</h3>
     <hr />
     <script>
-      function getRandomColor() {
-        var r = Math.floor(Math.random() * 256);
-        var g = Math.floor(Math.random() * 256);
-        var b = Math.floor(Math.random() * 256);
-        return "rgb(" + r + ", " + g + ", " + b + ")";
-      }
+      let colorNames = [
+        "maroon",
+        "red",
+        "orange",
+        "yellow",
+        "olive",
+        "purple",
+        "fuchsia",
+        "white",
+        "lime",
+        "green",
+        "navy",
+        "blue",
+        "aqua",
+        "teal",
+        "black",
+        "silver",
+        "gray",
+      ];
 
-      for (let i = 0; i < 16; i++) {
-        let color = getRandomColor();
-        let divElement = document.createElement("div");
-        divElement.style.backgroundColor = color;
-        divElement.textContent = color;
-        document.body.appendChild(divElement);
+      for (let i = 0; i < colorNames.length; i++) {
+        let str = "<div style='background-color:";
+        str += colorNames[i];
+        str += "'>" + colorNames[i] + "</div>";
+        document.write(str);
       }
     </script>
   </body>
